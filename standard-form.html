@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Standard Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Comic+Neue:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="standard-form-page">
+      <div class="header">
+        <h1>Standard Form</h1>
+        <p>Add fields and name them to create your form.</p>
+      </div>
+      <form id="standard-form">
+        <div id="fields-container">
+          <!-- Fields will be added here dynamically -->
+        </div>
+        <div class="button-container">
+          <button type="button" class="button" onclick="addField()">
+            Add Field
+          </button>
+          <button type="submit" class="button">Generate Form</button>
+        </div>
+      </form>
+      <a href="index.html" class="button back-button">Back to Home</a>
+
+      <!-- Container for the generated form -->
+     
+
+      <div id="generated-form-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
